@@ -1,0 +1,12 @@
+{
+  "domain": "ubbink_vigor",
+  "name": "Ubbink Ubiflux Vigor",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/your-user/ha-ubbink-vigor",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/your-user/ha-ubbink-vigor/issues",
+  "requirements": ["pymodbus>=3.6.0"],
+  "version": "1.0.0"
+}

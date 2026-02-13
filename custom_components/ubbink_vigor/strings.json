@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ubbink Vigor Connection",
+        "description": "Choose how you connect to your Ubbink Ubiflux Vigor ventilation unit.",
+        "data": {
+          "connection_type": "Connection type"
+        }
+      },
+      "tcp": {
+        "title": "TCP Connection",
+        "description": "Enter the IP address and port of your Modbus TCP bridge (e.g. Raspberry Pi Zero running ser2net or mbusd).\n\n**Bridge type** matters: ser2net tunnels raw serial bytes (RTU framing), while mbusd converts to Modbus TCP framing. Using the wrong setting will cause communication failures.",
+        "data": {
+          "modbus_host": "Host / IP address",
+          "modbus_port": "TCP port",
+          "slave_id": "Modbus slave address",
+          "tcp_bridge_type": "Bridge software"
+        }
+      },
+      "serial": {
+        "title": "Serial Connection",
+        "description": "Enter the serial port settings for the USB-to-RS485 dongle directly connected to this machine.",
+        "data": {
+          "serial_port": "Serial port (e.g. /dev/ttyUSB0)",
+          "serial_baudrate": "Baud rate",
+          "serial_parity": "Parity",
+          "slave_id": "Modbus slave address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the Ubbink Vigor unit. Check your settings, wiring, and bridge type selection."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  }
+}
